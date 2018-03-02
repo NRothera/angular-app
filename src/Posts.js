@@ -3,7 +3,7 @@ import logo from './logo.png';
 import Post from './Post';
 
 class Posts extends Component {
-  
+
   constructor() {
     super();
     this.state = {
@@ -25,7 +25,7 @@ class Posts extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/api/posts").then(results => {
+    fetch("http://nick-load-balancing-835572173.eu-central-1.elb.amazonaws.com/api/posts").then(results => {
       return results.json();
     }).then(data => {
       this.setState({posts: data});

@@ -8,6 +8,7 @@ import {
 import Home from "./Home";
 import Posts from "./Posts";
 
+
 class App extends Component {
   render() {
     return (
@@ -26,5 +27,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
